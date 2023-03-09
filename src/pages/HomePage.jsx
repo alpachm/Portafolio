@@ -11,7 +11,7 @@ import NavBar from '../components/shared/NavBar'
 import Footer from '../components/shared/Footer'
 import TopArrow from '../components/shared/TopArrow'
 
-const HomePage = () => {
+const HomePage = ({ setFullLoading }) => {
     return (
         <div className='home-page'>
             <Header />

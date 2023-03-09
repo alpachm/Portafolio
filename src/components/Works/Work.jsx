@@ -1,11 +1,9 @@
 import React, { useState } from 'react'
-import { useDispatch } from 'react-redux'
 import { useNavigate } from 'react-router-dom'
 import './styles/work.css'
 
 const Work = ({ work }) => {
 
-    const dispatch = useDispatch()
     const navigate = useNavigate()
 
     const handleClick = () => {

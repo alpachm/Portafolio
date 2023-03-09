@@ -20,7 +20,7 @@ function App() {
 
       <Routes>
         <Route path='/' element={<HomePage />} />
-        <Route path='/proyecto' element={<WorkInfo setFullLoading={setFullLoading} />} />
+        <Route path='/proyecto' element={<WorkInfo fullLoading={fullLoading} setFullLoading={setFullLoading} />} />
       </Routes>
 
     </div>

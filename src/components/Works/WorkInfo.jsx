@@ -7,7 +7,7 @@ import TopArrow from '../shared/TopArrow'
 import NavBar from '../shared/NavBar'
 import OtherHeader from '../shared/OtherHeader'
 
-const WorkInfo = ({ setFullLoading }) => {
+const WorkInfo = ({ fullLoading, setFullLoading }) => {
 
   const [info, setInfo] = useState()
 
@@ -16,9 +16,9 @@ const WorkInfo = ({ setFullLoading }) => {
     setFullLoading(true)
   }, [])
 
-  window.addEventListener('load', function () {
-    setFullLoading(false)
-  })
+  setTimeout(() => {
+    if (fullLoading) setFullLoading(false)
+  }, 2000);
 
   return (
     <div className='work-info'>
