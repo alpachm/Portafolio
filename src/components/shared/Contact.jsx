@@ -8,10 +8,13 @@ const Contact = () => {
                 <span>¿Te interesa mi trabajos?</span>
                 <h3 className='sub-title'>Contáctame</h3>
 
-                <form>
-                    <input type="text" placeholder='Ingresa tu nombre' required />
-                    <input type="text" placeholder='Motivo' required />
+                <form action="https://formsubmit.co/alexpacheco407@gmail.com" method="POST">
+                    <input type="text" name='Nombre' placeholder='Ingresa tu nombre' required />
+                    <input type="text" name='Motivo' placeholder='Motivo' required />
                     <textarea name="comentario" cols="30" rows="5" placeholder='Escríbe algo...' ></textarea>
+                    <input type="hidden" name="_captcha" value="false"></input>
+                    <input type="hidden" name="_next" value="https://alex-pacheco-portafolio.netlify.app/#/"></input>
+
                     <button>Envíar</button>
                 </form>
             </div>
