@@ -9,9 +9,9 @@ function App() {
 
   const [fullLoading, setFullLoading] = useState(true)
 
-  window.addEventListener('load', function () {
+  setTimeout(() => {
     setFullLoading(false)
-  })
+  }, 3500);
 
   return (
     <div className="App">
