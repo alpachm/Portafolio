@@ -10,6 +10,7 @@ const Contact = () => {
 
                 <form action="https://formsubmit.co/72a5635b58f235b648a40908c65ec750" method="POST">
                     <input type="text" name='Nombre' placeholder='Ingresa tu nombre' required />
+                    <input type="number" name='Numero' placeholder='Número de contacto' required />
                     <input type="text" name='Motivo' placeholder='Motivo' required />
                     <textarea name="comentario" cols="30" rows="5" placeholder='Escríbe algo...' ></textarea>
                     <input type="hidden" name="_captcha" value="false"></input>
