@@ -21,7 +21,7 @@ const Header = () => {
 
                 <nav className={`${isMenuMobile && 'show-nav'}`}>
                     <ul>
-                        <a href="#"><li>Inicio</li></a>
+                        <a onClick={() => setIsMenuMobile(false)} href="#"><li>Inicio</li></a>
                         <Link to="aboutMe" spy={true} smooth={true} offset={50} duration={500} onClick={() => setIsMenuMobile(false)} ><li>Acerca de mí</li></Link>
                         <Link to="works" spy={true} smooth={true} offset={50} duration={500} onClick={() => setIsMenuMobile(false)} ><li>Proyectos</li></Link>
                         <Link to="cv" spy={true} smooth={true} offset={50} duration={500} onClick={() => setIsMenuMobile(false)} ><li>CV</li></Link>
