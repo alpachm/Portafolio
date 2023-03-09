@@ -16,6 +16,10 @@ const WorkInfo = ({ setFullLoading }) => {
     setFullLoading(true)
   }, [])
 
+  window.addEventListener('load', function () {
+    setFullLoading(false)
+  })
+
   return (
     <div className='work-info'>
       <OtherHeader />
