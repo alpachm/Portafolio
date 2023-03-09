@@ -1,0 +1,75 @@
+.skills {
+    background: var(--background);
+}
+
+.div-bg {
+    background-image: url(../../../assets/skills/bg.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    position: relative;
+}
+
+.div-bg div {
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: var(--zposition-second);
+}
+
+.content-skills>h3 {
+    padding-top: 3rem;
+}
+
+.content-skills h3,
+.content-skills h4,
+.box-skills .box span {
+    color: var(--white);
+}
+
+.box-skills {
+    margin-top: 2rem;
+    display: grid;
+    gap: 1rem;
+}
+
+.box-skills .box .skill-padre {
+    width: 100%;
+    height: 30px;
+    background: var(--grey);
+}
+
+.box-skills .box .skill-padre .skill-hijo {
+    background: var(--gold);
+}
+
+.box-skills .box:nth-child(1) .skill-padre .skill-hijo {
+    height: 100%;
+    width: 92%;
+}
+
+.box-skills .box:nth-child(2) .skill-padre .skill-hijo {
+    height: 100%;
+    width: 88%;
+}
+
+.box-skills .box:nth-child(3) .skill-padre .skill-hijo {
+    height: 100%;
+    width: 70%;
+}
+
+.box-skills .box:nth-child(4) .skill-padre .skill-hijo {
+    height: 100%;
+    width: 85%;
+}
+
+@media (min-width:900px) {
+    .skills {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}

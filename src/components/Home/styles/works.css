@@ -1,0 +1,22 @@
+.works {
+    padding-top: 3rem;
+}
+
+.content-works h3 {
+    text-align: center;
+}
+
+.content-works h4 {
+    text-align: right;
+}
+
+.box-projects {
+    display: grid;
+}
+
+@media (min-width:800px) {
+    .box-projects {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}

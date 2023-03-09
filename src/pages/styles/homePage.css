@@ -1,0 +1,10 @@
+.home-page {
+    padding-bottom: 5rem;
+}
+
+@media (min-width:760px) {
+
+    .home-page {
+        padding-bottom: 0;
+    }
+}

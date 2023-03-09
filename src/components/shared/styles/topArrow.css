@@ -1,0 +1,38 @@
+.top-arrow {
+    position: fixed;
+    bottom: 90px;
+    right: 15px;
+    z-index: var(--zposition-third);
+
+    background: transparent;
+    width: 50px;
+    height: 50px;
+    text-decoration: none;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    transition: background .3s, border .3s;
+}
+
+.top-arrow i {
+    font-size: 2rem;
+    color: transparent;
+
+    transition: color .3s;
+}
+
+.show-div {
+    background: var(--black);
+}
+
+.top-arrow .show-arrow {
+    color: var(--gold);
+}
+
+@media (min-width:760px) {
+    .top-arrow {
+        bottom: 20px;
+    }
+}

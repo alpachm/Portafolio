@@ -1,0 +1,21 @@
+.work {
+    background: var(--background);
+    position: relative;
+}
+
+.work video {
+    width: 100%;
+}
+
+.work .img-mobile {
+    object-fit: contain;
+}
+
+.work button {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    z-index: var(--zposition-second);
+
+    width: 130px;
+}
