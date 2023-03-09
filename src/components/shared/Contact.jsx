@@ -8,7 +8,7 @@ const Contact = () => {
                 <span>¿Te interesa mi trabajos?</span>
                 <h3 className='sub-title'>Contáctame</h3>
 
-                <form action="https://formsubmit.co/alexpacheco407@gmail.com" method="POST">
+                <form action="https://formsubmit.co/72a5635b58f235b648a40908c65ec750" method="POST">
                     <input type="text" name='Nombre' placeholder='Ingresa tu nombre' required />
                     <input type="text" name='Motivo' placeholder='Motivo' required />
                     <textarea name="comentario" cols="30" rows="5" placeholder='Escríbe algo...' ></textarea>
