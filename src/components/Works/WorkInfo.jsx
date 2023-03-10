@@ -27,7 +27,10 @@ const WorkInfo = ({ fullLoading, setFullLoading }) => {
       <header>
         {
           info?.map(vid => (
-            <video key={vid.id} src={vid.videos.desktop} autoPlay muted preload loop></video>
+            <div className="video">
+              <video key={vid.id} src={vid.videos.desktop} autoPlay muted preload loop></video>
+              <i className='bx bxs-chevrons-down'></i>
+            </div>
           ))
         }
       </header>
@@ -85,7 +88,6 @@ const WorkInfo = ({ fullLoading, setFullLoading }) => {
 
       </div>
 
-      <TopArrow />
       <Footer />
 
     </div>

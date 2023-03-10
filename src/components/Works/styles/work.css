@@ -1,21 +1,146 @@
 .work {
     background: var(--background);
     position: relative;
+
+    overflow: hidden;
 }
 
 .work video {
     width: 100%;
 }
 
-.work .img-mobile {
-    object-fit: contain;
+.tap-div {
+    position: absolute;
+    bottom: 20%;
+    left: 10%;
+    z-index: var(--zposition-second);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transform: scale(1);
+
+    transition: transform 200ms;
+}
+
+.work .tap {
+    font-size: 2rem;
+    color: var(--light-gold);
+
+    animation: touch 2s infinite;
+}
+
+@keyframes touch {
+    0% {
+        color: var(--background);
+        transform: scale(1);
+    }
+
+    50% {
+        color: var(--white);
+        transform: scale(.8);
+    }
+
+    100% {
+        color: var(--background);
+        transform: scale(1);
+    }
+}
+
+.tap-div span {
+    font-size: 12px;
+
+    animation: fontTouch 2s infinite;
+}
+
+@keyframes fontTouch {
+    0% {
+        color: var(--background);
+    }
+
+    50% {
+        color: var(--white);
+    }
+
+    100% {
+        color: var(--background);
+    }
+}
+
+.hide-tap {
+    transform: scale(0);
+}
+
+.info-vid {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: var(--zposition-second);
+    width: 100%;
+    height: 100%;
+    background: rgb(0 0 0 / .7);
+    backdrop-filter: blur(2px);
+    padding: 1rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    transform: translateX(-200%);
+    transition: transform 300ms;
+}
+
+.content-info-vid {
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.info-vid i {
+    font-size: 3rem;
+    color: var(--gold)
+}
+
+.show-info-vid {
+    transform: translateX(0);
+}
+
+.info-vid p {
+    color: var(--white);
 }
 
 .work button {
     position: absolute;
     bottom: 20px;
     right: 20px;
-    z-index: var(--zposition-second);
+    z-index: var(--zposition-third);
 
-    width: 130px;
+    width: 120px;
+    height: 50px;
+    font-size: 1rem;
+}
+
+@media (min-width:760px) {
+
+    .tap-div {
+        display: none;
+    }
+
+    .content-info-vid {
+        height: 70%;
+        width: 70%;
+        margin: auto;
+    }
+
+    .info-vid i {
+        font-size: 5rem;
+    }
+
+    .info-vid p {
+        font-size: 1.5rem;
+    }
 }

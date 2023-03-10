@@ -38,6 +38,7 @@ const works = [
         icons: [iconReact],
         tecnologias: ['react'],
         librerias: ['react-scroll', 'formsubmit.co'],
+        resumen: 'Página completa desarrollada para cliente y realizada con REACT donde se muestra los servicios que ofrecen.',
         descripcion: 'Este fue mi primero proyecto real donde tuve la oportunidad de poner en práctica todo lo aprendido hasta ese momento. Fue un completo desafio que asumí con mucha responsabilidad y compromiso. Tuve que leer mucha documentación para poder agregar funcionalidades que faltaban. Prestando mucha atención a todo lo que mi cliente quería para su página web logré desarrollar este proyecto donde quedó completamente satisfecho.',
         url: 'https://grand-treacle-5fc0b9.netlify.app/'
     },
@@ -53,6 +54,7 @@ const works = [
         icons: [iconReact, iconRedux],
         tecnologias: ['react', 'redux'],
         librerias: ['axios', 'react-router-dom', 'react-hook-form', 'react-redux'],
+        resumen: 'Ecommerce completo donde puedes registrar usuario, agregar productos al carrito y comprar.',
         descripcion: 'Proyecto realizado para consumir un API completa. Tuve la oportunidad de hacerlo en equipo de 3 personas, donde afianzamos nuestro conocimiento en GitHub y trabajo en quipo. Fue un proyecto bastante complejo porque pusimos en practica conceptos avanzados de peticiones asincrónicas que realizamos para poder obtener los productos que fueron mostrados. Además implementamos conceptos de rutas protegidas con el Token Bearer. Logramos cumplir con el 100% del proyecto.',
         url: 'https://entregable-6-los-jinetes.netlify.app/'
     },
@@ -68,6 +70,7 @@ const works = [
         icons: [iconReact, iconRedux],
         tecnologias: ['react', 'redux'],
         librerias: ['axios', 'react-router-dom', 'react-hook-form', 'react-redux'],
+        resumen: 'Sitio web que muestra toda la info de los pokemones y los filtra por su tipo. Cuenta con Dark Mode.',
         descripcion: 'Proyecto realizado para poner en práctica peticiones asincrónicas y estados globales utilizando redux. Añadiendo el dark-mode intenté darle un toque más complejo y completo al proyecto.',
         url: 'https://poke-api-los-jinetes.netlify.app/'
     },
@@ -83,6 +86,7 @@ const works = [
         icons: [iconReact],
         tecnologias: ['react'],
         librerias: ['axios'],
+        resumen: 'Sitio web que muestra toda la info de la serie animada Rick&Morty. Cuenta con Dark Mode.',
         descripcion: 'Proyecto realizado en equipo de 4 personas para afianzar conocimientos en GitHub y trabajo en equipo. Con este proyecto reforzamos conocimiento de peticiones asincrónicas',
         url: 'https://team-los-4-jinetes.netlify.app/'
     },
@@ -98,6 +102,7 @@ const works = [
         icons: [iconReact],
         tecnologias: ['react'],
         librerias: ['axios'],
+        resumen: 'Sitio web que muestra la temperatura y estado de clima dependiendo de la ubicación del usuario.',
         descripcion: 'Proyecto realizado para reforzar conocimiento en peticiones asincrónicas.',
         url: 'https://app-clima-react-2.netlify.app/'
     },
@@ -113,6 +118,7 @@ const works = [
         icons: [iconReact],
         tecnologias: ['react'],
         librerias: ['axios'],
+        resumen: 'Sitio web donde puedes consultar información de cada país a través de un buscador. Cuenta con Dark Mode.',
         descripcion: 'Proyecto personal realizado para practicar nuevos conceptos. Consumiendo API pública de paises y agregando funcionalidades extras para sacar máximo provecho.',
         url: 'https://search-country-react.netlify.app/'
     },
@@ -128,6 +134,7 @@ const works = [
         icons: [, iconReact],
         tecnologias: ['react'],
         librerias: ['axios', 'react-hook-form'],
+        resumen: 'Sitio web donde puedes agregar, editar o eliminar usuarios',
         descripcion: 'Proyecto realizado para reforzar conocimientos de peticiones asincrónicas. Fue utilizada la librería react-hook-form para poder obtener la información del formulario ademas de trabajar con los metodos de promesas como el GET, POST y el UPDATE. Proyecto importante para comprender bien los cenceptos de petición asincrónica.',
         url: 'https://lively-horse-4b09b0.netlify.app/'
     },
@@ -143,6 +150,7 @@ const works = [
         icons: [iconHtml, iconCss, iconJs],
         tecnologias: ['html', 'css', 'javascript'],
         librerias: ['sweetalert2', 'mixitup'],
+        resumen: 'Ecommerce con las funcionalidades de agregar al carrito, eliminar o comprar. Cuenta con Dark Mode.',
         descripcion: 'Proyecto realizado para fortalecer conocimientos en JavasCript y el DOM. Se imprimen los productos de forma dinámica a través del DOM y se utiliza lógica de programación para el carrito de compras.',
         url: 'https://ubiquitous-douhua-847eb4.netlify.app/'
     },
@@ -158,6 +166,7 @@ const works = [
         icons: [iconHtml, iconCss],
         tecnologias: ['html', 'css'],
         librerias: ['no'],
+        resumen: 'Sitio web que imita un portafolio con toda su información.',
         descripcion: 'Maquetado de un ejemplo de portafolio. Este proyecto se realizó con el fin de utilizar las técnologias de HTML y CSS, además de entender muy bien los conceptos de Grid CSS y FlexBox CSS.',
         url: 'https://celebrated-melomakarona-154f37.netlify.app/'
     },
@@ -173,6 +182,7 @@ const works = [
         icons: [iconHtml, iconCss],
         tecnologias: ['html', 'css'],
         librerias: ['no'],
+        resumen: 'Sitio web que imita una página informativa.',
         descripcion: 'Proyecto realizado para fortalecer conocimientos en fundamentos como HTML y CSS. Maquetado 100% responsive. Proyecto importante para comprender conceptos como fleblox css y grid css',
         url: 'https://practica-maquetado.netlify.app/'
     }

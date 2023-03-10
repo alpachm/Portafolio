@@ -20,6 +20,7 @@
 .isLoading h1 {
     font-size: 3rem;
     color: var(--white);
+    padding-left: 40px;
 
     position: relative;
 }

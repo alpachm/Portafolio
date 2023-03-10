@@ -1,3 +1,35 @@
+.work-info header .video {
+    position: relative;
+}
+
+.work-info header .video i {
+    font-size: 7rem;
+    width: 100%;
+    color: var(--light-gold);
+
+    display: none;
+    justify-content: center;
+
+    position: absolute;
+    bottom: 30%;
+
+    animation: arrowMove 2s infinite;
+}
+
+@keyframes arrowMove {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(70px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
 .text-info {
     display: flex;
     flex-direction: column;
@@ -77,6 +109,10 @@
     .text-content {
         display: grid;
         grid-template-columns: 2fr 1fr;
+    }
+
+    .work-info header .video i {
+        display: flex;
     }
 }
 
