@@ -47,7 +47,7 @@ const NavBar = () => {
                     </div>
                 </Link>
 
-                <Link to="cv" spy={true} smooth={true} offset={50} duration={500}>
+                <Link to="cv" spy={true} smooth={true} offset={-300} duration={500}>
                     <div className="box">
                         <i className='bx bx-file'></i>
                         <span className={`${isHover && 'hov-span'}`}>CV</span>

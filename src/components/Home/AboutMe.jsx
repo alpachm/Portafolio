@@ -1,6 +1,7 @@
 import React from 'react'
 import './styles/aboutUs.css'
 import imgAbouteMe from '../../assets/aboutMe/img-aboutMe.png'
+import CV from '../../assets/file/CV.pdf'
 
 const AboutMe = () => {
     return (
@@ -25,6 +26,7 @@ const AboutMe = () => {
                         <a href="https://www.linkedin.com/in/alexjpachecom/" target={'_blank'} ><i className='bx bxl-linkedin-square'></i></a>
                         <a href="https://github.com/alpachm?tab=repositories" target={'_blank'} ><i className='bx bxl-github' ></i></a>
                     </div>
+                    <a id='cv' className='cv' download href={CV}>CV <i class='bx bx-download' ></i></a>
                     <img id='cv' className='img-aboutMe-mobile' src={imgAbouteMe} alt="" />
                 </div>
 
