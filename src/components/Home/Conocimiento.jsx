@@ -16,7 +16,7 @@ const Conocimiento = () => {
 
   return (
     <div className='conocimiento'>
-      <div className="content-conocimiento grilla">
+      <div className="content-conocimiento grilla hiddenRight">
         <h3 className='sub-title'>Conocimiento</h3>
         <div className="box-conocimiento">
 

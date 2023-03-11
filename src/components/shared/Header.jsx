@@ -22,10 +22,10 @@ const Header = () => {
                 <nav className={`${isMenuMobile && 'show-nav'}`}>
                     <ul>
                         <a onClick={() => setIsMenuMobile(false)} href="#"><li>Inicio</li></a>
-                        <Link to="aboutMe" spy={true} smooth={true} offset={50} duration={500} onClick={() => setIsMenuMobile(false)} ><li>Acerca de mí</li></Link>
-                        <Link to="works" spy={true} smooth={true} offset={50} duration={500} onClick={() => setIsMenuMobile(false)} ><li>Proyectos</li></Link>
-                        <Link to="cv" spy={true} smooth={true} offset={-150} duration={500} onClick={() => setIsMenuMobile(false)} ><li>CV</li></Link>
-                        <Link to="contact" spy={true} smooth={true} offset={50} duration={500} onClick={() => setIsMenuMobile(false)} ><li>Contacto</li></Link>
+                        <Link to="aboutMe" spy={true} smooth={true} offset={0} duration={500} onClick={() => setIsMenuMobile(false)} ><li>Acerca de mí</li></Link>
+                        <Link to="works" spy={true} smooth={true} offset={0} duration={500} onClick={() => setIsMenuMobile(false)} ><li>Proyectos</li></Link>
+                        <Link to="aboutMe" spy={true} smooth={true} offset={0} duration={500} onClick={() => setIsMenuMobile(false)} ><li>CV</li></Link>
+                        <Link to="contact" spy={true} smooth={true} offset={0} duration={500} onClick={() => setIsMenuMobile(false)} ><li>Contacto</li></Link>
 
                         <i onClick={hideMeneMobile} className='bx bxs-x-square'></i>
                     </ul>

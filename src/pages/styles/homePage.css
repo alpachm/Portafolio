@@ -8,3 +8,27 @@
         padding-bottom: 0;
     }
 }
+
+.hiddenRight {
+    opacity: 0;
+    transform: translateX(100px);
+
+    transition: opacity 800ms, transform 800ms;
+}
+
+.show-hiddenRight {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.hiddenLeft {
+    opacity: 0;
+    transform: translateX(-100px);
+
+    transition: opacity 800ms, transform 800ms;
+}
+
+.show-hiddenLeft {
+    opacity: 1;
+    transform: translateX(0);
+}

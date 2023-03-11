@@ -47,7 +47,7 @@ const Work = ({ work }) => {
                     <div className="icons">
                         {
                             work.icons.map(ico => (
-                                <i className={ico}></i>
+                                <i key={ico} className={ico}></i>
                             ))
                         }
                     </div>

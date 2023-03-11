@@ -3,8 +3,8 @@ import './styles/contact.css'
 
 const Contact = () => {
     return (
-        <div className='contact' id='contact'>
-            <div className="content-contact ">
+        <div className='contact sec' id='contact'>
+            <div className="content-contact hiddenLeft">
                 <span>¿Te interesa mi trabajos?</span>
                 <h3 className='sub-title'>Contáctame</h3>
 

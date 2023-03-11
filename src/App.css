@@ -12,6 +12,7 @@
 
 .App {
     background: var(--white);
+    overflow: hidden;
 }
 
 @media (min-width: 800px) {

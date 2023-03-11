@@ -38,9 +38,13 @@
     color: var(--light-white);
 }
 
-.content-navBar i {
+.content-navBar .icon-nav {
     font-size: 2rem;
     color: var(--grey);
+}
+
+.content-navBar .icon-active {
+    color: var(--gold);
 }
 
 @media (min-width:760px) {

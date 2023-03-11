@@ -49,21 +49,45 @@
 
 .box-skills .box:nth-child(1) .skill-padre .skill-hijo {
     height: 100%;
+    width: 0;
+
+    transition: width 1500ms;
+}
+
+.box-skills .box:nth-child(1) .skill-padre .show-skill-hijo {
     width: 92%;
 }
 
 .box-skills .box:nth-child(2) .skill-padre .skill-hijo {
     height: 100%;
+    width: 100%;
+
+    transition: width 1500ms;
+}
+
+.box-skills .box:nth-child(2) .skill-padre .show-skill-hijo {
     width: 88%;
 }
 
 .box-skills .box:nth-child(3) .skill-padre .skill-hijo {
     height: 100%;
+    width: 0;
+
+    transition: width 1500ms;
+}
+
+.box-skills .box:nth-child(3) .skill-padre .show-skill-hijo {
     width: 70%;
 }
 
 .box-skills .box:nth-child(4) .skill-padre .skill-hijo {
     height: 100%;
+    width: 100%;
+
+    transition: width 1500ms;
+}
+
+.box-skills .box:nth-child(4) .skill-padre .show-skill-hijo {
     width: 85%;
 }
 

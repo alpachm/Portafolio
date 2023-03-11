@@ -6,8 +6,8 @@ import Work from '../Works/Work';
 const Works = () => {
 
     return (
-        <div className='works' id='works'>
-            <div className="content-works">
+        <div className='works sec' id='works'>
+            <div className="content-works hiddenRight">
 
                 <div className="text-works grilla">
                     <h3 className='sub-title'>Mis proyectos</h3>

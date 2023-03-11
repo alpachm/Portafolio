@@ -4,9 +4,10 @@ import imgMain from '../../assets/main/img-main.png'
 import { Link } from 'react-scroll'
 
 const Main = () => {
+
     return (
-        <div className='main'>
-            <div className="content-main grilla">
+        <div className='main sec' id='main'>
+            <div className="content-main grilla hiddenRight">
                 <div className="img-container ">
                     <img src={imgMain} alt="" />
                 </div>
