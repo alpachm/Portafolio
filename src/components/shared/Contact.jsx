@@ -14,7 +14,7 @@ const Contact = () => {
                     <input type="text" name='Motivo' placeholder='Motivo' required />
                     <textarea name="comentario" cols="30" rows="5" placeholder='Escríbe algo...' ></textarea>
                     <input type="hidden" name="_captcha" value="false"></input>
-                    <input type="hidden" name="_next" value="https://alex-pacheco-portafolio.netlify.app/#/"></input>
+                    <input type="hidden" name="_next" value="https://alex-pacheco-portafolio.netlify.app/"></input>
 
                     <button>Envíar</button>
                 </form>
