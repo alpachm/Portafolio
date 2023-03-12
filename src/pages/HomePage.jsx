@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import './styles/homePage.css'
 import AboutMe from '../components/Home/AboutMe'
 import Conocimiento from '../components/Home/Conocimiento'
@@ -11,40 +11,44 @@ import NavBar from '../components/shared/NavBar'
 import Footer from '../components/shared/Footer'
 import TopArrow from '../components/shared/TopArrow'
 
-const HomePage = () => {
+const HomePage = ({ isMove }) => {
 
-    const elementsRight = document.querySelectorAll('.hiddenRight')
-    const elementLeft = document.querySelectorAll('.hiddenLeft')
-    const skills = document.querySelectorAll('.skill-hijo')
+    useEffect(() => {
 
-    const observer = new IntersectionObserver(entries => {
+        const elementsRight = document.querySelectorAll('.hiddenRight')
+        const elementLeft = document.querySelectorAll('.hiddenLeft')
+        const skills = document.querySelectorAll('.skill-hijo')
 
-        entries.forEach(entry => {
+        const observer = new IntersectionObserver(entries => {
 
-            if (entry.isIntersecting) {
+            entries.forEach(entry => {
 
-                if (entry.target.classList.value.includes('hiddenRight')) {
-                    entry.target.classList.add('show-hiddenRight')
+                if (entry.isIntersecting) {
+
+                    if (entry.target.classList.value.includes('hiddenRight')) {
+                        entry.target.classList.add('show-hiddenRight')
+                    }
+                    if (entry.target.classList.value.includes('hiddenLeft')) {
+                        entry.target.classList.add('show-hiddenLeft')
+                    }
+                    if (entry.target.classList.value.includes('skill-hijo')) {
+                        entry.target.classList.add('show-skill-hijo')
+                    }
+                } else {
+
+                    if (entry.target.classList.value.includes('skill-hijo')) {
+                        entry.target.classList.remove('show-skill-hijo')
+                    }
+
                 }
-                if (entry.target.classList.value.includes('hiddenLeft')) {
-                    entry.target.classList.add('show-hiddenLeft')
-                }
-                if (entry.target.classList.value.includes('skill-hijo')) {
-                    entry.target.classList.add('show-skill-hijo')
-                }
-            } else {
-                if (entry.target.classList.value.includes('skill-hijo')) {
-                    entry.target.classList.remove('show-skill-hijo')
-                }
+            })
+        }, { threshold: .2 })
 
-            }
-        })
-        // entries.forEach(entry => console.log(entry.target.classList.value.includes('hiddenRight')))
-    }, { threshold: .2 })
+        elementsRight.forEach(element => observer.observe(element))
+        elementLeft.forEach(element => observer.observe(element))
+        skills.forEach(skill => observer.observe(skill))
 
-    elementsRight.forEach(element => observer.observe(element))
-    elementLeft.forEach(element => observer.observe(element))
-    skills.forEach(skill => observer.observe(skill))
+    }, [isMove])
 
     return (
         <div className='home-page'>

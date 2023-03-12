@@ -7,7 +7,7 @@ import TopArrow from '../shared/TopArrow'
 import NavBar from '../shared/NavBar'
 import OtherHeader from '../shared/OtherHeader'
 
-const WorkInfo = ({ fullLoading, setFullLoading }) => {
+const WorkInfo = ({ fullLoading, setFullLoading, isMove, setIsMove }) => {
 
   const [info, setInfo] = useState()
 
@@ -22,7 +22,7 @@ const WorkInfo = ({ fullLoading, setFullLoading }) => {
 
   return (
     <div className='work-info'>
-      <OtherHeader />
+      <OtherHeader isMove={isMove} setIsMove={setIsMove} />
 
       <header>
         {
