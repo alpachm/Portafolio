@@ -6,10 +6,23 @@ import Footer from '../shared/Footer'
 import TopArrow from '../shared/TopArrow'
 import NavBar from '../shared/NavBar'
 import OtherHeader from '../shared/OtherHeader'
+import { useNavigate } from 'react-router-dom'
 
-const WorkInfo = ({ fullLoading, setFullLoading, isMove, setIsMove }) => {
+const WorkInfo = ({ fullLoading, setFullLoading }) => {
 
   const [info, setInfo] = useState()
+  const [isBtnBack, setIsBtnBack] = useState(false)
+  const navigate = useNavigate()
+
+  const btn = document.querySelector('.btn-back')
+
+  window.addEventListener('scroll', () => {
+    window.scrollY > 900 ? setIsBtnBack(true) : setIsBtnBack(false)
+  })
+
+  const handleClick = () => {
+    if (btn.classList.contains('show-btn-back')) navigate('/')
+  }
 
   useEffect(() => {
     setInfo(works.filter(work => work.id === +localStorage.getItem('id')))
@@ -22,7 +35,7 @@ const WorkInfo = ({ fullLoading, setFullLoading, isMove, setIsMove }) => {
 
   return (
     <div className='work-info'>
-      <OtherHeader isMove={isMove} setIsMove={setIsMove} />
+      <OtherHeader />
 
       <header>
         {
@@ -86,6 +99,11 @@ const WorkInfo = ({ fullLoading, setFullLoading, isMove, setIsMove }) => {
 
         </div>
 
+      </div>
+
+      <div onClick={handleClick} className={`btn-back ${isBtnBack && 'show-btn-back'}`} >
+        <i className='bx bxs-left-arrow'></i>
+        <span>Volver</span>
       </div>
 
       <Footer />

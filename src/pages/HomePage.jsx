@@ -11,7 +11,7 @@ import NavBar from '../components/shared/NavBar'
 import Footer from '../components/shared/Footer'
 import TopArrow from '../components/shared/TopArrow'
 
-const HomePage = ({ isMove }) => {
+const HomePage = ({ fullLoading }) => {
 
     useEffect(() => {
 
@@ -25,14 +25,16 @@ const HomePage = ({ isMove }) => {
 
                 if (entry.isIntersecting) {
 
-                    if (entry.target.classList.value.includes('hiddenRight')) {
-                        entry.target.classList.add('show-hiddenRight')
-                    }
-                    if (entry.target.classList.value.includes('hiddenLeft')) {
-                        entry.target.classList.add('show-hiddenLeft')
-                    }
-                    if (entry.target.classList.value.includes('skill-hijo')) {
-                        entry.target.classList.add('show-skill-hijo')
+                    if (!fullLoading) {
+                        if (entry.target.classList.value.includes('hiddenRight')) {
+                            entry.target.classList.add('show-hiddenRight')
+                        }
+                        if (entry.target.classList.value.includes('hiddenLeft')) {
+                            entry.target.classList.add('show-hiddenLeft')
+                        }
+                        if (entry.target.classList.value.includes('skill-hijo')) {
+                            entry.target.classList.add('show-skill-hijo')
+                        }
                     }
                 } else {
 
@@ -48,7 +50,7 @@ const HomePage = ({ isMove }) => {
         elementLeft.forEach(element => observer.observe(element))
         skills.forEach(skill => observer.observe(skill))
 
-    }, [isMove])
+    }, [fullLoading])
 
     return (
         <div className='home-page'>

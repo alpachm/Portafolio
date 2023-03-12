@@ -26,7 +26,7 @@ const AboutMe = () => {
                         <a href="https://www.linkedin.com/in/alexjpachecom/" target={'_blank'} ><i className='bx bxl-linkedin-square'></i></a>
                         <a href="https://github.com/alpachm?tab=repositories" target={'_blank'} ><i className='bx bxl-github' ></i></a>
                     </div>
-                    <a className='cv' download href={CV}>CV <i class='bx bx-download' ></i></a>
+                    <a className='cv' download href={CV}>CV <i className='bx bx-download' ></i></a>
                     <img id='cv' className='img-aboutMe-mobile' src={imgAbouteMe} alt="" />
                 </div>
 

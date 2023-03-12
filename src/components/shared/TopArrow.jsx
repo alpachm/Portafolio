@@ -12,7 +12,7 @@ const TopArrow = () => {
     })
 
     return (
-        <a className={`top-arrow ${isArrow && 'show-div'}`} href="#"><i class={`bx bxs-up-arrow ${isArrow && 'show-arrow'}`}></i></a>
+        <a className={`top-arrow ${isArrow && 'show-div'}`} href="#"><i className={`bx bxs-up-arrow ${isArrow && 'show-arrow'}`}></i></a>
     )
 }
 

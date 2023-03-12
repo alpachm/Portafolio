@@ -8,7 +8,6 @@ import HomePage from './pages/HomePage'
 function App() {
 
   const [fullLoading, setFullLoading] = useState(true)
-  const [isMove, setIsMove] = useState(false)
 
   setTimeout(() => {
     setFullLoading(false)
@@ -20,8 +19,8 @@ function App() {
       <IsLoading fullLoading={fullLoading} />
 
       <Routes>
-        <Route path='/' element={<HomePage isMove={isMove} />} />
-        <Route path='/proyecto' element={<WorkInfo fullLoading={fullLoading} setFullLoading={setFullLoading} isMove={isMove} setIsMove={setIsMove} />} />
+        <Route path='/' element={<HomePage fullLoading={fullLoading} />} />
+        <Route path='/proyecto' element={<WorkInfo fullLoading={fullLoading} setFullLoading={setFullLoading} />} />
       </Routes>
 
     </div>
