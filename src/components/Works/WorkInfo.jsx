@@ -14,6 +14,8 @@ const WorkInfo = ({ fullLoading, setFullLoading }) => {
   const [isBtnBack, setIsBtnBack] = useState(false)
   const navigate = useNavigate()
 
+  console.log(info)
+
   const btn = document.querySelector('.btn-back')
 
   window.addEventListener('scroll', () => {
