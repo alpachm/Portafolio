@@ -4,15 +4,6 @@ import "./styles/conocimiento.css";
 const Conocimiento = () => {
   const [isBox, setIsBox] = useState(true);
 
-  // window.addEventListener("scroll", () => {
-
-  //   if (window.scrollY > 850 && window.scrollY < 1200) {
-  //     setIsBox(true)
-  //   } else {
-  //     setIsBox(false)
-  //   }
-  // })
-
   return (
     <div className="conocimiento">
       <div className="content-conocimiento grilla hiddenRight">
@@ -31,6 +22,11 @@ const Conocimiento = () => {
           <div className={`box ${isBox && "show-box"}`}>
             <i className="bx bxl-javascript"></i>
             <h4>JavaScript</h4>
+          </div>
+
+          <div className={`box ${isBox && "show-box"}`}>
+            <i className="bx bxl-typescript"></i>
+            <h4>TypeScript</h4>
           </div>
 
           <div className={`box ${isBox && "show-box"}`}>
