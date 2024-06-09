@@ -35,6 +35,11 @@ const Conocimiento = () => {
           </div>
 
           <div className={`box ${isBox && "show-box"}`}>
+            <i className="bx bx-mobile-alt"></i>
+            <h4>React Native</h4>
+          </div>
+
+          <div className={`box ${isBox && "show-box"}`}>
             <i className="bx bxl-github"></i>
             <h4>GitHub</h4>
           </div>
